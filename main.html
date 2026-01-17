@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>Blog</title>
   </head>
   <body>
@@ -28,26 +31,28 @@
           <p>
             La prima cosa da fare è suddividere in blocchi logici la pagina,
             identificando le parti comuni da applicare a tutte le pagine. Le
-            varie aree saranno quindi suddivise in: • Contenuti di intestazione
-            del tag header • Contenuti centrali variabili del tag main (corpo
-            principale) • Contenuti di fine pagina comuni, da inserire nel tag
-            footer
+            varie aree saranno quindi suddivise in: 
+            <ol>
+              <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+              <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
+              <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+            </ol> 
 
-            <span>Formattazione del codice</span>
+
+            <span>Formattazione del codice</span> <br>
             Il testo dell'articolo dovrà essere formattato per identificare
             tutte le parti da selezionare con i CSS. Perciò i passi saranno:
             Progettare il markup assegnando ad ogni specifico testo il tag
             appropriato Scrivere l'HTML dai tag esterni a quelli interni e
-            dall'alto verso il basso
-
-            <span>Applicare gli stili CSS</span>
+            dall'alto verso il basso. <br>
+            <span>Applicare gli stili CSS</span> <br>
 
             L'applicazione di stili CSS è cresciuta negli anni fino a
             raggiungere la diffusione pressoché totale.
           </p>
-          <table>
+          <table class="css-table">
             <thead>
-              <p>Diffusione dei CSS</p>
+              <caption>Diffusione dei CSS</caption>
               <tr>
                 <th>Anno</th>
                 <th>% di utilizzo</th>
@@ -89,6 +94,7 @@
             developers come loro: - INSERIRE VIDEO YOUTUBE -
           </p>
         </div>
+        <hr>
         <div class="form-articolo">
           <p>
             Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
@@ -104,24 +110,40 @@
             <button type="submit">Iscriviti</button>
           </form>
         </div>
-        <div class="correlati">
-          <h4>Articoli correlati</h4>
-          <p>Validare il codice HTML</p>
-          <p>Categoria: develop</p>
-          <p>Data: 18-9-2020</p>
+        <aside class="correlati">
+  <h4>Articoli correlati</h4>
 
-          <p>Correggere la sintassi</p>
-          <p>Categoria: develop</p>
-          <p>Data: 16-9-2020</p>
+  <ul>
+    <li>
+      <article>
+        <h5>Validare il codice HTML</h5>
+        <p class="categoria">Categoria: develop</p>
+        <time datetime="2020-09-18">18 settembre 2020</time>
+      </article>
+    </li>
 
-          <p>Meno Kb nella pagina</p>
-          <p>Categoria: ottimizzazione</p>
-          <p>Data: 30-9-2020</p>
-        </div>
+    <li>
+      <article>
+        <h5>Correggere la sintassi</h5>
+        <p class="categoria">Categoria: develop</p>
+        <time datetime="2020-09-16">16 settembre 2020</time>
+      </article>
+    </li>
+
+    <li>
+      <article>
+        <h5>Meno KB nella pagina</h5>
+        <p class="categoria">Categoria: ottimizzazione</p>
+        <time datetime="2020-09-30">30 settembre 2020</time>
+      </article>
+    </li>
+  </ul>
+</aside>
+
       </article>
     </main>
     <footer>
-        <p>Blog Epicode ©2023</p>
+        <p>Blog ©2026</p>
     </footer>
   </body>
 </html>
